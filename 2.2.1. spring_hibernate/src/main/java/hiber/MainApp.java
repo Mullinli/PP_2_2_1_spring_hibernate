@@ -22,11 +22,11 @@ public class MainApp {
         userService.getUser(1);
         userService.getUser(2);
 
-        User user3 = userService.getUserByCar("BMW", 5);
+        User user = userService.getUserByCar("BMW", 5);
 
         List<User> users = userService.listUsers();
 
-        users.add(user3);
+        users.add(user);
 
         for (User user : users) {
             System.out.println("\nId = " + user.getId());
